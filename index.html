@@ -1,13 +1,52 @@
----
-layout: default
-title: Jon Smock
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<p>Testing Jekyll static site generator!</p>
+  <title>Jon Smock - Home</title>
+  <meta name="description" content="Main page to collect all my identities across the internet">
+  <meta name="author" content="Jonathan Smock">
 
-<ul class="posts">
-{% for post in site.posts %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
 
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div id="container">
+    <h1><a href="http://jonsmock.com">Jonathan Smock</a></h1>
+
+    <p id="subtitle">Web developer in Williamsport, PA</p>
+
+    <ul id="nav">
+      <li><a href="http://stackoverflow.com/users/25538/jon-smock">StackOverflow</a></li>
+      <li><a href="http://twitter.com/jonsmock">Twitter</a></li>
+      <li><a href="https://github.com/jonsmock">GitHub</a></li>
+      <li><a href="http://www.yelp.com/user_details?userid=8TK0DfKahFscygt8oX719w">Yelp</a></li>
+    </ul>
+
+    <p id="secret">I heart Ruby</p>
+  </div>
+
+<script type="text/javascript" src="http://use.typekit.com/vlg1fvm.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8891926-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

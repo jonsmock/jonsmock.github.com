@@ -1,0 +1,31 @@
+/* ✰✰✰✰✰ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Me */
+body { font-family: droid-serif-1,droid-serif-2,serif; background-color: #fff; line-height: 2.4em; }
+#container { max-width: 400px; margin: 0 auto; position: relative; }
+
+h1 { font-size: 2em; text-align: center; padding-top: 180px; }
+#subtitle { text-align: center; }
+
+#nav { list-style-type: none; }
+#nav li { text-align: center; }
+
+#secret { text-indent: -9999px; display: block; height: 128px; width: 128px; padding: 10px; position: absolute; top: 20px; left: 124px; border: 2px solid #eee; background: #fff url('http://www.gravatar.com/avatar/7cf5af9e0f94976adae00ce7dfdd467b?s=128&d=identicon&r=PG') no-repeat 10px 10px; }
+
