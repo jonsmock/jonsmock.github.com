@@ -13,7 +13,7 @@ write a unit test and turn it *into* a property.
 
 Let's look at an example unit test you might write in the bowling kata, using
 Clojure, clojure.test, and test.check. After your scoring function can total
-up all the pins knocked down, you're like to write a test like this:
+up all the pins knocked down, you're likely to write a test like this:
 
 ```
 (testing "Spares are worth 10 points"
