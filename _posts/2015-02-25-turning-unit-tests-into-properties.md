@@ -74,7 +74,7 @@ of deep testing questions here, but hopefully you're starting to get over the
 initial learning curve.
 
 Try the kata and see for yourself! Here's an interesting idea for exploration:
-what happens when you replace a space with a strike? Can you say anything about
+what happens when you replace a spare with a strike? Can you say anything about
 how the two scores relate? Try to write it as a property.
 
 ## Other Notes and Tips
