@@ -1,0 +1,102 @@
+---
+layout:     post
+title:      Turning unit tests into properties
+date:       2015-02-25 15:15:00
+summary:    Handy tips for getting over the property-based test learning curve.
+categories: blog
+---
+
+Here's a tip for getting over the property-based testing "writer's block":
+write a unit test and turn it *into* a property.
+
+Let's look at an example unit test you might write in the bowling kata, using
+Clojure, clojure.test, and test.check. After your scoring function can total
+up all the pins knocked down, you're like to write a test like this:
+
+```
+(testing "Spares are worth 10 points"
+  (is (= 10
+         (score "1/000000000000000000"))))
+```
+
+We hardcoded the constant 1 here, but the fact that we knocked down *1* pin is
+completely incidental to this example. What we're actually trying to convey is
+that a spare means the rest of the 10 pins were knocked down.
+
+Let's rewrite this as a property, step by step. First, we simply wrap the unit
+test in our property testing framework. This basically accomplishes nothing
+other than to run the unit test over and over (in this case, 100 times).
+
+```
+(defspec t-wrap-normal-test-up-as-property 100
+  (for-all []
+           (= 10
+              (score "1/000000000000000000"))))
+```
+
+Notice we don't have anything in our for-all bindings. Our next step is to pull
+out the specific inputs and replace them with generators. Sometimes will force
+us to make our assertion more general, as we will soon see.
+
+```
+(defspec t-extract-the-moving-part 100
+  (for-all [first-throw (gen/choose 0 9)]
+           (= 10
+              (score (str first-throw "/" "000000000000000000")))))
+```
+
+Now we can actually knock down any number of pins for our first roll, and
+hopefully it's more clear that spares don't care what the first roll is. Usually
+at this point you'll have more ideas on how to expand a property. This is good!
+Here's one idea:
+
+(defspec t-expand-with-more-ideas 100
+  (for-all [first-throw (gen/choose 0 9)
+            throw-after (gen/choose 0 9)]
+           (= (+ (+ 10 ball-after) ball-after)
+              (score (str first-ball "/" throw-after "00000000000000000")))))
+
+You may have formatted this differently, but now we're actually testing that the
+spare frame includes the following roll's pins no matter what that roll actually
+is! We're getting a lot of mileage out of one simple property, and we're getting
+a more complete description of what a spare actually means.
+
+Try the kata and see for yourself! Here's an interesting idea for your
+property-based imagination:  what happens when you replace a space with a
+strike? Can you say anything about how the two scores relate?
+
+More tips:
+
+On at least one occassion, when using this technique, I found that a single unit
+test was conflating two properties. The unit test had so much detail that it was
+hard to really see the purpose through the weeds. Once I did this exercise, I
+found myself writing an `and` in my property, and I was able to separate into
+two distinct properties.
+
+All the usual testing caveats apply here:
+1. pure code is easier to test than stateful code
+2. removing things like db access will make things easier and faster
+3. the more collaborators to your test, the more pain you will feel (listen to
+   it!)
+
+Another thing you'll notice (that we didn't do above) is that you'll spend a lot
+of time writing generators for your inputs. This is ok! This helps you think
+about your problem domain, and you may spend more time upfront, but generators
+are waaay more reusable than a single unit test's inputs. For instance, we could
+write several properties that all use the same bowling game string generator.
+
+Reid Draper outlines 3 styles of property tests in his talk above. They're worth
+repeating here:
+
+1. Roundtrip - Let's say we were writing a JSON encoding/decoding library. Well,
+   we could write the property that decode(encode(original)) == original.
+2. Trusted Implementation - We could also property test that our-decode(encoded)
+   == trusted-decode(encoded)
+3. Input/Output Relation - count(col1 + col2) =
+
+I won't rehash the motivation or details of property-based testing, but we will
+go through an actual example. If you're into talks, I recommend [Reid Draper's
+talk](https://www.youtube.com/watch?v=JMhNINPo__g) and [Jessica Kerr's
+talk](https://www.youtube.com/watch?v=shngiiBfD80). If you want to go deeper, I
+highly recommend anything by John Hughes.
+
