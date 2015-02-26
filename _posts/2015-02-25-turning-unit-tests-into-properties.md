@@ -37,8 +37,8 @@ other than to run the unit test over and over (in this case, 100 times).
 ```
 
 Notice we don't have anything in our for-all bindings. Our next step is to pull
-out the specific inputs and replace them with generators. Sometimes will force
-us to make our assertion more general, as we will soon see.
+out the specific inputs and replace them with generators. Sometimes this will
+force us to make our assertion more general, as we will soon see.
 
 ```
 (defspec t-extract-the-moving-parts 100
