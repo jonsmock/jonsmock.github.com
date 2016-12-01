@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jon Smock - A Peek Inside SAT Solvers 
+title: A Peek Inside SAT Solvers
 permalink: /sat-talk/
 ---
 
@@ -43,25 +43,6 @@ Discussion-related and general edification videos:
 - [Tim Ewald - Clojure: Programming with Hand Tools](https://www.youtube.com/watch?v=ShEez0JkOFw)
 - [Superoptimizing LLVM by John Regehr](https://www.youtube.com/watch?v=Ux0YnVEaI6A)
 - [Random amazing interview with Will Byrd about logic, prolog, etc](https://www.infoq.com/interviews/byrd-relational-programming-minikanren)
-
-??
-# Similar talks to mine:
-# 
-# 
-# Another talk where the first few minutes are similar to mine:
-# (TODO: look at KLEE)
-# Talks about separation of concerns (what / how)
-# This talk talks about community structure (structure of the instance that helps it be tractable - similar to Will Byrd’s discussion)
-# Interesting bit in the middle about conflict clauses - they make the assertion that high quality conflict clauses (the ones you want to keep) span very few communities
-# Main talk is 16 minutes
-# https://www.youtube.com/watch?v=AY2b54d-HSo
-# 
-# 
-# - [Analyzing programs with Z3]
-# Analyzing programs with Z3
-# https://www.youtube.com/watch?v=ruNFcH-KibY
-# Includes a quick talk about SAT and Z3 theories - unbounded ints, reals, bitvectors, floating point, arrays … (need to find all the ones)
-
 
 ## Papers
 
