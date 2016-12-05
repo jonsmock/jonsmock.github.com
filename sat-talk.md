@@ -4,7 +4,7 @@ title: A Peek Inside SAT Solvers
 permalink: /sat-talk/
 ---
 
-[Video coming!]
+Check out the [video on ClojureTV](https://www.youtube.com/watch?v=d76e4hV1iJY)!
 
 The goal of this talk was to introduce SAT solving, learn some cool algorithms, and get everyone excited about declarative programming. Go check
 core.logic and rule engines as well!
