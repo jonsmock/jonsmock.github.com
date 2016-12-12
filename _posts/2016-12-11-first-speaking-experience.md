@@ -76,14 +76,14 @@ the talk was "done."
 I practiced my talk for my iPhone recorder app, which seemed to add just a
 little pressure. (I even listened to one of those sessions once!) And, of
 course, give the talk to other people, even if half of the talk is unfinished.
-I ultimately gave my talk for a coworker, two friends, and my speaker mentor
+I ultimately gave my talk for my boss, two friends, and my speaker mentor
 (I'll come back to this shortly).
 
 Learnings from showing people:
 
  - Others' general familiarity with topic
  - How to explain the ideas and diagrams
- - Starting with concrete problem works really well
+ - Starting with a concrete problem works really well
  - What pieces to cut
  - What jokes were funny
 
@@ -120,10 +120,10 @@ Here are just some of the notes from that meeting:
 
 - I used the word "force" during unit propagation; the mentor suggested "infer"
 - I had 1 and 0 on diagram/graph slides to save space; the mentor suggested T/F
-- The mentor noted which phrased I used that were good and worth keeping
+- The mentor noted which phrases I used that were good and worth keeping
 - The mentor commented on pacing and humor
-- Red color on Intermission venn diagram slide; my original colors were not
-  contrasty enough
+- I added the red color on the Intermission venn diagram slide, because my
+  mentor rightly observed the original colors didn't contrast enough
 
 These are small things perhaps, but I definitely notice the difference. But,
 more than anything, the meeting gave me a huge boost in confidence.
@@ -131,10 +131,10 @@ more than anything, the meeting gave me a huge boost in confidence.
 Other bits of general advice from the mentor:
 
 - Don't panic if you get stuck; nobody knows. Take a "dramatic pause" or a sip
-  of water. It's fine. (I had probably 8+ of these moments...)
-- Don't shy away from using language from the research literature. We want to
+  of water. It's fine. (I had probably 8+ of these small panic moments...)
+- Don't shy away from using language in the research literature. We want to
   learn something, not just be entertained. (I didn't show him the notation
-  slides, but this comment prompted me to put them back in)
+  slides, but this comment prompted me to put them back in.)
 - Don't worry about "um"s and "uh"s.
 - Try to enjoy the conference before your talk. It won't be easy, but try!
 
@@ -147,7 +147,7 @@ Conferences have a total summer camp effect. This year did not disappoint! I met
 a ton of new friends, met up with old friends, and filled my small notebook with
 crazy ideas and board game references.
 
-Immediately after my plane landed I got on the conference Slack and hooked up
+Immediately after my plane landed, I got on the conference Slack and hooked up
 with someone on my same plane. We met up and walked to the bus, where we met yet
 another Conj'er. Of the two, one had literally just started programming months
 before and the other had been doing high frequency trading and other stuff
@@ -166,7 +166,7 @@ check slides. Talking through our main points helped to put me in the right
 mindset, and it was also reassuring that, yes, I have a talk that at least
 someone is interested in.
 
-[Paula kicked things off](https://www.youtube.com/watch?v=8rRzESy0X2k)
+[Paula kicked the day off](https://www.youtube.com/watch?v=8rRzESy0X2k)
 with a talk about logic, rules, datalog, and graph databases. I'm in the middle
 of rewatching this talk, because while I'm a huge fan of rule engines, I fixated
 on Paula. She looked confident and relatable, and it gave me a bit more courage.
@@ -207,7 +207,7 @@ time. I did it in 40 minutes flat, which was on par with just about every other
 practice run I had done (maybe 10-15 times). The fastest I ever had given the
 talk was to my speaker mentor, which came in at 38:30, and I had added the
 logic notation slides after that. Welp, I clocked the real thing at 35:21. My
-coworker playfully mocked me afterward for basically mic-dropping and not taking
+boss playfully mocked me afterward for basically mic-dropping and not taking
 questions with five minutes left - ha.
 
 All the feedback after the talk really seemed positive. A small group of awesome
@@ -262,7 +262,7 @@ What would I do differently:
 
 - Not sure if the SAT problem statement "hooked" the audience enough
 - I should have waited an extra couple minutes to let people trickle in. I was
-  worried about time, so I started exactly at 3:00. Several people commented
+  worried about time, so I started exactly at 3:00pm. Several people commented
   that they came a tad late, so they missed the problem setup.
 - Perhaps I could have recapped more, maybe very quickly at the end of sections
 - Fact check more - I think I had a couple factual errors in the Discussion
@@ -273,12 +273,12 @@ What would I do differently:
   be there.
 - I may have made Restarts sound like a separate algorithm, when it really is
   just something incorporated into the CDCL algorithm.
-- I looked up the definition of satisfy weeks before, but I decided not to do
+- I looked up the definition of "satisfy" weeks before, but I decided not to do
   the dictionary definition slide. I thought that everyone else would or that it
   might come off as cliche. Looking at the definition actually did help me, so
   maybe it would have been worth including.
-- Practice more. Some of the stops-and-starts or studders were during key
+- Practice more. Some of the stops-and-starts or stutters were during key
   explanations that I just didn't practice enough.
 - Think of better words than "thing" and "awesome." You could probably make a
   drinking game out of my talk - ha. Being more articulate under pressure
-  probably comes with experience, I imagine.
+  probably comes with experience.
