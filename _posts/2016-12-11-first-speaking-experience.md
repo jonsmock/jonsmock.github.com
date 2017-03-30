@@ -30,7 +30,7 @@ I found a [workshop](http://www.birs.ca/events/2014/5-day-workshops/14w5101/vide
 between theorists and implementors, where they had posted the videos. This
 seemed like a pretty large area that we never touch on in Clojure-land. And hey,
 if I really liked it, someone else probably would too. (Clojurians seem to be
-practioners with an eye on research.)
+practitioners with an eye on research.)
 
 If you're interested, I eventually turned my resources into [this](jonsmock.com/sat-talk).
 
