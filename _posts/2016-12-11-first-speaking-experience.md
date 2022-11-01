@@ -32,7 +32,7 @@ seemed like a pretty large area that we never touch on in Clojure-land. And hey,
 if I really liked it, someone else probably would too. (Clojurians seem to be
 practitioners with an eye on research.)
 
-If you're interested, I eventually turned my resources into [this](jonsmock.com/sat-talk).
+If you're interested, I eventually turned my resources into [this](http://jonsmock.com/sat-talk).
 
 ## Preparation
 
